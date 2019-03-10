@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Multiple if</title>
+</head>
+<body>
+   <!--<input type="button" value=" click here" onclick="a()">-->
+  <script>
+     var x = prompt("Enter a number");
+     var y = prompt("Enter a Number");
+      function a(){
+        var mul = (parseInt(x) * parseInt(y));
+        document.write("Out Put of two numbers is: " +mul);
+      }
+       function b(){
+         var add = (parseInt(x) + parseInt(y));
+         document.write("Out Put of two numbers is: " +add);
+       }
+       function c(){
+         var sub = (parseInt(x) - parseInt(y))
+         document.write("Out Put of two numbers is: " +sub);
+       }
+       function d(){
+         var div = (parseInt(x) % parseInt(y));
+         document.write("Out Put of two numbers is: " +div);
+       }
+      var i = prompt("Enter an option from 1 to 4 only");
+      if(1 == parseInt(i)){
+         a();
+        //alert("Multiplication of two number is :"+mul);
+      } 
+      else if (2 == parseInt(i)){
+        b();
+      }
+      else if(3 == parseInt(i)){
+        c();
+      }
+      else if (4 == parseInt(i)){
+        d();
+      }
+      else
+      {
+        alert("Try one more time with 1 to 4 numbers");
+      }
+      
+      
+  </Script>
+</body>
+</html>

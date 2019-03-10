@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Two Inputs</title>
+</head>
+<body>
+  <input type="text" id="inp1" value="">
+  <input type="text" id="inp2" value="">
+  <button onclick="add()"> click here</button>
+  <h2 id="cal"> </h2>
+  <script>
+      function add(){
+        var a = document.getElementById("inp1").value;
+        var b = document.getElementById("inp2").value;
+        //var c = parseInt(a) + parseInt(b);
+        //document.getElementById("cal").innerHTML = +c;
+        document.getElementById("cal").innerHTML = parseInt(a) + parseInt(b);
+      }
+  </script>
+</body>
+</html>

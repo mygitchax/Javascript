@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mouse Over</title>
+  <style>
+    #box{
+      width: 350px;height: 400px; background: cornsilk;
+    }
+    
+  </style>
+  <script>
+    function disp(val){
+      document.getElementById("box").style.background = "green";
+      document.getElementById("box").style.borderRadius="20px";
+    }
+
+    function out(){
+      document.getElementById("box").style.background = "blue";
+      document.getElementById("box").style.borderRadius ="100px";
+    }
+  </script>
+</head>
+<body>
+  <div id="box" onmouseover="disp()" onmouseout="out()"></div>
+</body>
+
+</html>

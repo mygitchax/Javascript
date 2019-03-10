@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Functions</title>
+</head>
+<body>
+  <script>
+    function diff(){
+      var val1 = prompt("Enter First value: ")
+      var val2 = prompt("Enter Second Value: ")
+      var val3 = prompt("Enter Third value ")
+
+      if(parseInt(val1) > parseInt(val2) && parseInt(val1) > parseInt(val3) )
+      {
+        alert("Greater number is :" +val1);
+      }
+      else if(parseInt(val2)>parseInt(val1) && parseInt(val2) > parseInt(val3))
+      {
+        alert("Greater number is :" +val2);
+      }
+      else{
+        alert("Greater numberr is " +val3);
+      }
+    }
+    //var cal = diff();
+    //document.write(cal);   
+  </script>
+  <!--<input type="button" onclick="diff()" value="Click Me!">-->
+</body>
+</html>

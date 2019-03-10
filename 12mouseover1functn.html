@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mouse Over with single function</title>
+  <style>
+    #box{
+      width: 250px; height: 300px; background-color: black;
+      color: brown; 
+    }
+    </style>
+  <script>
+    function disp(val){
+      if(val == 'sam'){
+        document.getElementById("box").style.background="blue";
+      }
+      else if(val =='sung'){
+        document.getElementById("box").innerHTML = "Check out our guide to the 10 most iconic Philly eats and food items – things you have to come to Philadelphia for in order to enjoy the real thing Check out our guide to the 10 most iconic Philly eats and food items – things you have to come to Philadelphia for in order to enjoy the real thing Check out our guide to the 10 most iconic Philly eats and food items – things you have to come to Philadelphia for in order to enjoy the real thing Check out our guide to the 10 most iconic Philly eats and food items – things you have to come to Philadelphia for in order to enjoy the real thing Check out our guide to the 10 most iconic Philly eats and food items – things you have to come to Philadelphia for in order to enjoy the real thing Check out our guide to the 10 most iconic Philly eats and food items – things you have to come to Philadelphia for in order to enjoy the real thing..."
+        document.getElementById("box").style.height = "auto";
+      }
+      else if(val=='cup'){
+        document.getElementById("box").style.borderRadius = "50px";
+      }
+      else if(val == 'gum'){
+        document.getElementById("box").innerHTML = "Check out our guide to the 10 most iconic Philly eats and food items – things you have to come to Philadelphia for in order to enjoy the real thing";
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="box" onmouseover="disp('sam')" onmouseout="disp('sung')" onmousemove="disp('cup')" onmousedown="disp('gum')"></div>
+</body>
+</html>

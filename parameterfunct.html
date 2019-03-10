@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Two parameter Function</title>
+</head>
+<body>
+   <button onclick="walls(8,10)"> click here</button>
+   <h2 id="out"></h2>
+  <script>
+    function walls( diameter, height) {
+      var radius = diameter/2;
+      var circumference = 2* Math.PI * radius;
+      var wallarea = circumference * height;    
+      document.getElementById("out").innerHTML = "walls area =" +wallarea;
+    }
+  </script>
+</body>
+</html>

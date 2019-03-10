@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Forloop</title>
+</head>
+<body>
+  <script>
+    function mul(){
+      var val = document.getElementById("inp").value;
+      for( i = 0; i <=val; i++){
+        //document.getElementById("val").innerHTML = document.getElementById("val").innerHTML +i;
+        document.getElementById("val").innerHTML += "<br>"+i; //x=x+y// x+=y
+      }
+    }
+  </script>
+  <input type="text" id="inp" value="">
+  <button onclick="mul()">click here</button>
+  <h2 id="val"> </h2>
+</body>
+</ht

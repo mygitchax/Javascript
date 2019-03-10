@@ -1,0 +1,29 @@
+while writing functions (document.write) is not suitable. use only (document.getelementById())
+If you use <DIV> tag no need to write (InnerHtml) just write the document. 
+///(This.value)///
+1) this.value will choosen only at select statement.
+2) It will point to value which are in the select statements.
+3)Because in the select tag we are directly adding events to the input fields.
+4) In button we are not retriving the values/ we are retriving values from the input tags.
+5) here [document.getelementById("").]-----It is also a object.
+        <select onchange="disp(this.value)">   |
+            <option>AP</option>                |   onchange is the event-----just like onclick event in <button>
+            <option>TN</option>                |
+        </select> 
+        <div id ="Ref"></div>                             | 
+        <body> 
+          <script> 
+          function disp(val){                                     |
+            document.getelementById("Ref").InnerHtml = val        |   Here by choosing onchange event of perticular inpots like                                           |(AP,TN) this.value will trigger to that perticuler selected                                              |input.
+                                                                  | {Function disp(val)} will take that option and generate the    output.
+            }                                                     |
+          </script>                                               |      
+        </body>                                                   |
+------------------------------------------------------------------------------------------------------
+we can creat class="button color"
+        .button{
+          height:250px; width:350px; background: gray;
+        }
+        .color:hover{
+          background:blue;
+        }

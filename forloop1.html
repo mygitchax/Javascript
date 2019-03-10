@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Forloop</title>
+</head>
+<body>
+  <input type="text" value="" id="inp">
+  <button onclick="loop()">Click Here</button>
+  <script>
+   // document.write("Stratig of loop", "<br>");
+   function loop(){
+    var val = document.getElementById("inp").value;
+    for(val ; val<=10; val++)
+    {
+      document.write("count started : " +val , "<br>" );
+    }
+    document.write("loop Ended:");
+   }
+  </script>
+</body>
+</html>

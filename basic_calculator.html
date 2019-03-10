@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Basic Calculator</title>
+</head>
+<body> 
+  <input type="text" value="" id ="inp1"> <br><br>
+  <input type="text" value="" id="inp2"><br> <br>
+  <button value="add" onclick="disp('add')"> Addition</button>
+  <button value="sub" onclick="disp('sub')">Subtration</button>
+  <button value="mul" onclick="disp('mul')">Multiplication</button>
+  <button value="div" onclick="disp('div')">Division</button>
+  <button value="clr" onclick="disp('clr') ">clear</button>
+  <h2 id="out"> </h2>
+  
+  <script>
+      function disp(val) {
+        var val1 = document.getElementById("inp1").value;
+        var val2 = document.getElementById("inp2").value;
+        var val3;
+        //document.getElementById("out").innerHTML = "Addition :" +val3;
+        if (val == "add")
+        {
+           val3 = parseInt(val1) + parseInt(val2);
+          document.getElementById("out").innerHTML ="Addition of two numbers" +val3;
+        }
+        else if(val == "sub"){
+            val3 = parseInt(val1) - parseInt(val2);
+            document.getElementById("out").innerHTML = "Subtract of two numbers :" +val3;
+        }
+        else if(val == "mul"){
+          val3 = parseInt(val1) * parseInt(val2);
+          document.getElementById("out").innerHTML = "Multiplication of two numbers :" +val3;
+        }
+        else {
+          val3 = parseInt(val1) / parseInt(val2);
+          document.getElementById("out").innerHTML = "Division of two numbers :" +val3; 
+        }
+        document.clear("disp('clr')");
+      }
+  </script>
+</body>
+</html>

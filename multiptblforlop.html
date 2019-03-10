@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Multiplicationn table using for loop</title>
+</head>
+<body>
+  <script>
+    function mul(){
+        var val = document.getElementById("inp").value;
+        for(i =0; i<=10 ; i++){
+          //document.write("</br>");
+         //var x = val * i;
+         //document.write("<br>");
+         //document.write(x);
+         document.getElementById("out").innerHTML += val+ ' * '+ i +' = '+ val*i  +'<br>';
+        }
+    }
+
+  </script>
+  <input type="text" id="inp" value="">
+  <button onclick="mul()"> Click Here</button>
+  <div id="out"> </div>
+</body>
+</html>

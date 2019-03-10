@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>This Statement</title>
+</head>
+<body>
+  <script>
+    function chang(val){
+        document.getElementById("out").innerHTML = val;
+    }
+
+  </script>
+  <h2>Select any state :</h2> <br>
+  <select name="" id="state" onchange="chang(this.value)">
+    <option>AP</option>
+    <option>TN</option>
+    <option>KN</option>
+    <option>MH</option>
+  </select>
+  
+  <div id="out"></div>
+</body>
+</html>

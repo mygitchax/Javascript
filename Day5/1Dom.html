@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DOM functon</title>
+  <style>
+    #txt{
+      width: 250px; height: 350px; background: aquamarine; border: 2px solid red;
+    }
+    </style>
+    <script>
+      function clk(){
+        document.getElementById("txt").style.background = "black";//DOM Document Object Model.
+      }
+      function disp(){
+        document.getElementById("txt").style.background = "gray";
+      }
+      </script>
+</head>
+<body>
+  <div id="txt"></div> 
+   <input type="button" value="Click Here" id="Btn" onclick="clk()" onmousedown="disp()">
+</body>
+</html>

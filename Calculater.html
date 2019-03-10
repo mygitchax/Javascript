@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculater</title>
+</head>
+<style>
+  #cal{
+    width: 200px; height: 275px; background: rgb(228, 221, 221);
+    margin-left: 250px; margin-top: 150px;
+    border: solid black; 
+  }
+    .inp{
+      height: 50px; width: 190px;
+      margin: 5px 2px 10px 2px; border:solid orange;
+
+    }  
+    .button{
+      height: 30px; width: 35px;
+      margin: 5px; 
+    }  
+    .color:hover{
+      background: rgb(104, 190, 190);
+    }
+    .equal{
+      height: 30px; width: 85px; margin: 5px;
+    } 
+</style>
+<script>
+    function cal(val){
+      if(val != '='){
+      document.getElementById("in").value = document.getElementById("in").value + val; // x=x+y i.e (x+ =y)
+    }
+    else{
+     document.getElementById("in").value = eval(document.getElementById("in").value);
+    }
+    }
+    function clr( val){
+      document.getElementById("in").value = " ";
+    }
+    function cls(){
+      window.close();
+    }
+</script>
+<body>
+  <div id ="cal">
+    <input type="text" id="in" value="" class="inp">
+    <input type="submit" value="1" onclick="cal('1')"  class="button color" >
+    <input type="submit" value="2" onclick="cal('2')"  class="button color" >
+    <input type="submit" value="3" onclick="cal('3')" class="button color" >
+    <input type="submit" value="+" onclick="cal('+')"  class="button color" >
+    
+    <br>
+    <input type="submit" value="4" onclick="cal('4')"  class="button color" >
+    <input type="submit" value="5" onclick="cal('5')"  class="button color" >
+    <input type="submit" value="6" onclick="cal('6')"  class="button color" >
+    <input type="submit" value="-" onclick="cal('-')"  class="button color" >
+    <br>
+    <input type="submit" value="7" onclick="cal('7')"  class="button color" >
+    <input type="submit" value="8" onclick="cal('8')" class="button color" >
+    <input type="submit" value="9" onclick="cal('9')"  class="button color" >
+    <input type="submit" value="*" onclick="cal('*')"  class="button color" >
+    <br>
+    <input type="submit" value="0" onclick="cal('0')"  class="button color" >
+    <input type="submit" value="/" onclick="cal('/')"  class="button color" >
+    <input type="submit" value="=" onclick="cal('=')"  class="button color" >
+    <input type="submit" value="c" onclick="clr(' ')"  class="button color" >
+    <input type="button" value="X" onclick="cls()" class="button color" >
+     
+  </div>
+</body>
+</html>
